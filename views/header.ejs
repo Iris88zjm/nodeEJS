@@ -1,0 +1,26 @@
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <ul>
+        <li><a class="navbar-brand" href="/">首页</a></li>
+        <li><a class="navbar-brand" href="/subform">如何提交表单并接收参数?</a></li>
+        <li><a class="navbar-brand" href="/usesession">如何使用session?</a></li>
+        <li><a class="navbar-brand" href="/usecookies">如何使用cookies?</a></li>
+        <li><a class="navbar-brand" href="/usecrypto">如何字符串加密?</a></li>
+        <li><a class="navbar-brand" href="/reg">注册</a></li>
+      </ul>
+      
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <% if (locals.username) { %> 
+          <li><a href="#">        
+                <%= username %>          
+          </a></li>
+          <li><a href="/logout">安全退出</a></li> 
+        <% } %>           
+      </ul>
+    </div>              
+  </div>
+</div>
